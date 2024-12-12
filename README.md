@@ -15,13 +15,6 @@ The Data used for the project are from these sources.
 2. [Boroughs](https://data.cityofnewyork.us/City-Government/Real-Property-Income-and-Expense-Form-non-complian/wvts-6tdf/data_preview)
 3. [Income] - I scrapped the web and compiled my own list of median income based in each of the 5 boroughs.
 
-#  Virutal Environment Instructions
-1. First you will want to create a venv: python -m venv venv 
-        [note:] If you are on a Mac, use 'python3'
-2. Activate your virtual environment: source venv/Scripts/activate
-        [note:] If you are on a Mac, use source venv/bin/activate
-3. Install the required packages: pip install -r requirements.txt
-
 # Project requirements
 
 1. Load Data
@@ -31,11 +24,18 @@ I read in two CSV files and one geopandas/json file
 I merge in Boroughs and Licenses using an inner join on boro_name. I also merge Licenses with Income. I then clean the data to show the only columns needed the rest of the way.
 
 3. Visualize Data
-I use a total of 9 matplotlib visualizations for this project. 
+I use a total of 10 matplotlib visualizations for this project. 
 
 4. Best Practices
+1. First you will want to create a venv: python -m venv venv 
+        [note:] If you are on a Mac, use 'python3'
+2. Activate your virtual environment: source venv/Scripts/activate
+        [note:] If you are on a Mac, use source venv/bin/activate
+3. Install the required packages: pip install -r requirements.txt
 
 5. Interpretation of Data
+I used markdowns to explain my graphs and comments to show what the code used does.
 
 # Findings
-While the median income from Manhattan to the Bronx is more than double. My findings will clearly show that income does not play a significant in which dog breed people go with. 
+![Yorkshire Terrier](yorkshireterrier_adult.jpg)
+While the median income from Manhattan to the Bronx is more than double. My findings will clearly show that income does not play a significant in which dog breed people go with. The most common dog owned in each of the five boroughs is Yorkshire Terrier. For additional information, we also looked at the most common name, Bella, and the most common gender is male. 
